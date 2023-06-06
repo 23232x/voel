@@ -1,0 +1,293 @@
+/*  --- FOOTER RESPONSIVO*/
+
+@media (max-width: 1152px) {
+  footer.footer-bg section.container-footer div.formulario {
+    display: flex;
+    justify-content: center;
+  }
+  footer.footer-bg section.container-footer div.formulario form div.text-btn {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer.footer-bg
+    section.container-footer
+    div.formulario
+    form
+    div.text-btn
+    textarea {
+    width: 60%;
+  }
+  footer.footer-bg section.container-footer div.formulario form div.btn {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 799px) {
+  footer.footer-bg section.container-footer div.contato div.conta-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer.footer-bg section.container-footer div.formulario {
+    margin-top: 10rem;
+  }
+  footer.footer-bg
+    section.container-footer
+    div.formulario
+    form
+    div.text-btn
+    textarea {
+    width: 90%;
+  }
+}
+
+/* ESTILO : LARGURA MÁXIMA 1500PX */
+@media (max-width: 1180px) {
+  html {
+    font-size: 50%;
+  }
+
+  header div.container-menu {
+    width: 90%;
+    max-width: 108rem;
+  }
+}
+
+/* ---- */
+@media (max-width: 888px) {
+  section.hero div.itens div.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* 
+  section.hero div.itens {
+    margin-top: 1rem;
+  } */
+  section.hero div.itens div.item h2.item_1 {
+    font-size: 3rem;
+  }
+  section.hero div.itens div.item img {
+    margin-top: -5rem;
+    width: 40rem;
+    height: 40rem;
+  }
+
+  /*  --- SERVICOS ----- */
+
+  section.servicos div.site-inst h1 {
+    font-size: 2.5rem;
+    /* margin-right: 10rem; */
+  }
+  section.servicos div.site-inst p {
+    width: 40rem;
+    line-height: 3rem;
+  }
+  section.servicos div.caracte {
+    margin-left: 1rem;
+  }
+}
+
+/* ---- */
+
+@media (max-width: 672px) and (max-width: 887px) {
+  section.hero div.itens {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  section.hero div.itens div.item h2.item_1 {
+    font-size: 2.5rem;
+  }
+  section.quem-somos {
+    background: url() #55358f;
+    border-radius: 10px;
+  }
+
+  section.servicos {
+    display: flex;
+    flex-wrap: wrap;
+
+    background: url() #5a8b02;
+  }
+  section.servicos div.site-inst {
+    margin: 0 auto;
+    padding: 3px;
+    flex: 1;
+    background: #55358f;
+    padding-bottom: 10rem;
+  }
+
+  section.servicos div.caracte {
+    margin-top: 1rem;
+    margin-left: 0;
+    flex: 1;
+    background: #5a8b02;
+    border-radius: 2rem;
+  }
+
+  section.servicos div.site-inst h1 {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    font-weight: bold;
+    font-size: 3.2rem;
+  }
+  section.servicos div.site-inst h1:after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 0.4rem;
+    border-radius: 1rem;
+    background: #fff;
+    margin: 1rem auto;
+  }
+  section.servicos div.site-inst p {
+    margin: 0 auto;
+    line-height: 3.25rem;
+    text-align: center;
+  }
+
+  section.servicos div.caracte h2 {
+    display: block;
+    text-align: center;
+    font-size: 3.2rem;
+    margin-top: 5rem;
+  }
+
+  section.servicos div.caracte h2:after {
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  section.servicos div.caracte ul {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  section.servicos div.caracte ul li::after {
+    margin: 0 auto;
+  }
+  section.servicos div.caracte ul li.dois {
+    margin-left: 0rem;
+  }
+  section.servicos div.caracte ul li.tres {
+    margin-left: 0rem;
+  }
+
+  section.servicos div.caracte ul li.quatro {
+    margin-left: 0rem;
+  }
+  section.servicos div.caracte ul li.cinco {
+    margin-left: 0rem;
+  }
+  section.planos {
+    margin-top: 55rem;
+  }
+}
+
+/* ----- */
+
+@media (max-width: 630px) {
+  header div.container-menu div.menu-section nav.menu {
+    display: none;
+  }
+  .one,
+  .two,
+  .three {
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  /* fullscreen */
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #232323;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header div.container-menu div.menu-section.on nav.menu {
+    display: block;
+    /*     background: red; */
+  }
+  header div.container-menu div.menu-section.on nav.menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header div.container-menu div.menu-section.on nav.menu ul li {
+    padding: 2rem;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  .menu-section.on nav {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 4rem;
+    line-height: 4rem;
+    display: block;
+  }
+}
+
+/* --- HERO ---- */
+
+/* --   QUEM SOMOS ----- */
+
+@media (max-width: 782px) {
+  section.site-container aside.item-container {
+    margin-top: 2rem;
+    border-radius: 1rem;
+  }
+
+  section.site-container aside.item-container p {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  section.site-container aside.item-container p a {
+    width: 23rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 736px) {
+  .form-item textarea {
+    resize: none;
+  }
+}

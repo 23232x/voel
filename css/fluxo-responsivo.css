@@ -1,0 +1,29 @@
+html {
+  font-size: 50%;
+}
+
+@media (max-width: 630px) {
+  section.hero .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 977px) {
+  section.site-bg div.site-container aside.item-container {
+    margin-top: 3rem;
+    border-radius: 4px;
+  }
+  section.site-bg div.site-container aside.item-container p {
+    text-align: center;
+  }
+  section.site-bg div.site-container aside.item-container p a {
+    width: 35%;
+  }
+}
+@media (max-width: 755px) {
+  section.site-bg div.site-container aside.item-container p a {
+    width: 95%;
+  }
+}

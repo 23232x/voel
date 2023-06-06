@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="36" viewBox="0 0 35 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7da438;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_14" data-name="Rectangle 14" class="cls-1" width="35" height="36" transform="translate(268 1844)"/>
+    </clipPath>
+  </defs>
+  <g id="whatsapp" class="cls-2" transform="translate(-268 -1844)">
+    <g id="question_answer-24px" transform="translate(268 1844.5)">
+      <path id="Path_38" data-name="Path 38" class="cls-3" d="M0,0H35V35H0Z"/>
+      <path id="Path_39" data-name="Path 39" class="cls-1" d="M30.625,8.75H27.708V21.875H8.75v2.917a1.463,1.463,0,0,0,1.458,1.458H26.25l5.833,5.833V10.208A1.463,1.463,0,0,0,30.625,8.75ZM24.792,17.5V4.375a1.463,1.463,0,0,0-1.458-1.458H4.375A1.463,1.463,0,0,0,2.917,4.375V24.792L8.75,18.958H23.333A1.463,1.463,0,0,0,24.792,17.5Z"/>
+    </g>
+  </g>
+</svg>

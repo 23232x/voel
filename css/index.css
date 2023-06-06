@@ -1,0 +1,843 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  color: #ffffff;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+html {
+  /* a cada 1rem será considera 10px */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  /* ---   EFEITO DESLIZANTE SUAVE ENTRE OS LINKS INTERNOS */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background: url(../img/bg/formas-bg.svg) repeat center;
+}
+/* INICIO ESTILIZAÇÃO CABECALHO*/
+header {
+  display: flex;
+}
+
+header div.header-bg {
+  flex: 1;
+  background: url(../img/header/header.svg) no-repeat center;
+  background-size: cover;
+  /*  height: 15rem; */
+  z-index: 1;
+}
+/* container menu e logo */
+header div.container-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 108rem;
+  margin: 3rem auto;
+}
+header div.container-menu div.logo {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ESTILIZAÇÃO LOGO */
+header div.container-menu div.logo a {
+  font-size: 4rem;
+  text-transform: capitalize;
+  margin-top: 10px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+/* header div.container-menu div.logo a:hover {
+  font-weight: bold;
+  transition: 0.5s;
+}
+header div.container-menu div.logo a::after {
+  content: " />";
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: 10px;
+  transform: scaley(2);
+  opacity: 0;
+}
+header div.container-menu div.logo a::before {
+  content: "<";
+  display: inline-block;
+  transition: 0.5s;
+  transform: scaley(2);
+  margin-right: 10px;
+  opacity: 0;
+}
+
+header div.container-menu div.logo a:hover::after {
+  content: " />";
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: 10px;
+  transform: scaley(1);
+  opacity: 1;
+}
+header div.container-menu div.logo a:hover::before {
+  content: "<";
+  display: inline-block;
+  transition: 0.5s;
+  transform: scaley(1);
+  margin-right: 10px;
+  opacity: 1;
+} */
+
+/* EXIBINDO MENU INLINE*/
+header div.container-menu div.menu-section nav.menu ul {
+  display: flex;
+}
+
+/* estilizando o menu */
+header div.container-menu div.menu-section nav.menu ul li a {
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  /*   font-family: Arial, Helvetica, sans-serif; */
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+header div.container-menu div.menu-section nav.menu ul li a::before {
+  content: "<";
+  display: inline-block;
+  margin-right: 5px;
+  transform: scaley(2);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+header div.container-menu div.menu-section nav.menu ul li a:hover::before {
+  content: "<";
+  display: inline-block;
+  margin-right: 5px;
+  transform: scaley(1);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+header div.container-menu div.menu-section nav.menu ul li a::after {
+  content: "/ >";
+  display: inline-block;
+  margin-right: 5px;
+  transform: scaley(2);
+  opacity: 0;
+  transition: 0.5s;
+  margin-left: 3px;
+}
+
+header div.container-menu div.menu-section nav.menu ul li a:hover::after {
+  content: " / >";
+  display: inline-block;
+  margin-right: 5px;
+  transform: scaley(1);
+  opacity: 1;
+  transition: 0.5s;
+  margin-left: 3px;
+}
+
+/* hero */
+/* Estilização do slide */
+
+section.hero .container {
+  width: 90%;
+  max-width: 108rem;
+  margin: 0 auto;
+  margin-top: 18rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.hero div.container .itens img {
+  width: 35rem;
+}
+section.hero div.itens span {
+  display: inline-block;
+  color: #981d97;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section.hero .itens h2 {
+  color: #4b4b4b;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+section.hero .container .itens h1 {
+  font-size: 3.5rem;
+  color: #4b4b4b;
+  font-weight: bold;
+}
+
+section.hero .container .itens h1 span {
+  background: #981d97;
+  color: #fff;
+  padding: 0 1rem;
+  border-radius: 2px;
+}
+
+/*  -- PARTE 2 */
+
+/* section.site-bg {
+  background: url(../img/bg/formas-bg.svg) repeat center;
+  background-size: cover;
+} */
+
+section.site-bg div.site-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  max-width: 108rem;
+  margin: 20rem auto;
+}
+section.site-bg div.site-container h1 {
+  flex: 3 2 100%;
+  font-size: 3.2rem;
+  color: #811a80;
+  line-height: 4.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+section.site-bg div.site-container h1:after {
+  display: block;
+  content: "";
+  background: #811a80;
+  width: 10rem;
+  height: 0.55rem;
+  border-radius: 4rem;
+  margin-left: 0;
+}
+
+section.site-bg div.site-container div.item-container {
+  flex: 2 1 40rem;
+  margin: 2rem 2rem 2rem 0;
+}
+section.site-bg div.site-container div.item-container p {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #363636;
+}
+section.site-bg div.site-container div.second {
+  flex: 1 1 20rem;
+  margin: 2rem 2rem 2rem 0;
+}
+section.site-bg div.site-container div.second p span {
+  color: #5a8b02;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+section.site-bg div.site-container aside.item-container {
+  flex: 1 1 20rem;
+  margin-top: -10rem;
+  background: #55358f;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 21% 0% 21% 0% / 29% 17% 21% 41%;
+}
+
+section.site-bg div.site-container aside.item-container p {
+  padding: 1rem;
+  font-size: 2rem;
+  line-height: 3.25rem;
+}
+div.site-container aside.item-container p a {
+  display: block;
+  background: #5a8b02;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  text-align: center;
+}
+/* responsivo */
+@media (max-width: 977px) {
+  section.site-bg div.site-container aside.item-container {
+    margin-top: 3rem;
+    border-radius: 4px;
+  }
+  section.site-bg div.site-container aside.item-container p {
+    text-align: center;
+  }
+  section.site-bg div.site-container aside.item-container p a {
+    width: 95%;
+  }
+}
+
+/* ------ QUEM SOMOS ------ */
+
+section.quem-somos {
+  background: url(../img/sobre/quem_somos.svg) no-repeat center;
+  background-size: cover;
+  width: 90%;
+  max-width: 108rem;
+  margin: 0 auto 10rem auto;
+  height: 45rem;
+}
+
+section.quem-somos h2 {
+  padding-top: 5rem;
+  font-size: 3.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+section.quem-somos h2::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+}
+section.quem-somos p {
+  padding-top: 5rem;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 90%;
+  font-size: 2rem;
+  line-height: 3.25rem;
+}
+
+/* ---- SERVICOS ----- */
+section.servicos {
+  background: url(../img/servicos/servicos.svg) no-repeat center;
+  background-size: cover;
+  width: 90%;
+  max-width: 108rem;
+  margin: 0 auto; /* 10rem auto 10rem auto; */
+  height: 56rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*   background: #5d5d5d; */
+}
+
+section.servicos div.site-inst {
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 35rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+section.servicos div.site-inst h1 {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  margin: 0 auto;
+}
+
+section.servicos div.site-inst h1::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background: #fff;
+  margin: 1rem 0;
+}
+
+section.servicos div.site-inst p {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 3.35rem;
+  max-width: 50rem;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+section.servicos div.caracte {
+  flex: 1 1 13rem;
+  margin-top: 8rem;
+  margin-left: 3rem;
+}
+section.servicos div.caracte h2 {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+}
+section.servicos div.caracte h2::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background: #fff;
+  margin: 1rem 0;
+}
+
+section.servicos div.caracte ul {
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+section.servicos div.caracte ul li {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+section.servicos div.caracte ul li::after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 10rem;
+  height: 0.2rem;
+}
+
+section.servicos div.caracte ul li.dois {
+  margin-left: 2rem;
+}
+section.servicos div.caracte ul li.tres {
+  margin-left: 3rem;
+}
+
+section.servicos div.caracte ul li.quatro {
+  margin-left: 4rem;
+}
+
+section.servicos div.caracte ul li.cinco {
+  margin-left: 7rem;
+}
+
+/* ------ ESTILIZAÇÃO DOS PLANOS ----- */
+section.planos {
+  max-width: 108rem;
+  width: 90%;
+  margin: 0 auto;
+  /* adicionado margin top- pode haver alteração na responsividade*/
+  margin-top: 10rem;
+}
+
+section.planos h2 {
+  font-size: 3.2rem;
+  color: #811a80;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section.planos h2::after {
+  content: "";
+  display: block;
+  width: 16rem;
+  height: 0.5rem;
+  background: #811a80;
+  margin: 1.4rem auto;
+}
+
+section.planos div.container-planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section.planos div.container-planos div.plano-item {
+  background: #981d97;
+  flex: 1 1 30rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.planos div.container-planos div.basico {
+  background: #b83fb7;
+}
+
+section.planos div.container-planos div.plus {
+  background: #811a80;
+}
+
+section.planos div.container-planos div.customizado {
+  background: #55358f;
+}
+
+section.planos div.container-planos div.plano-item h2 {
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 4.4rem;
+}
+section.planos div.container-planos div.plano-item h2::after {
+  content: "";
+  display: block;
+  width: 9rem;
+  height: 0.5rem;
+  background: #fff;
+  margin-top: 1rem;
+}
+
+/* editando a lista */
+section.planos div.container-planos div.plano-item ul {
+  padding-top: 2rem;
+}
+
+section.planos div.container-planos div.plano-item ul li {
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section.planos div.container-planos div.plano-item ul li::before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: #7da438;
+  border: 2px solid #5a8b02;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+section.planos div.container-planos div.plano-item h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 2rem;
+  line-height: 3rem;
+}
+
+section.planos div.container-planos div.plano-item h1 {
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 1.5rem;
+}
+section.planos div.container-planos div.plano-item a {
+  margin-top: 7rem;
+  display: block;
+  width: 25rem;
+  padding: 1.5rem 5.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  background: #7da438;
+  border-radius: 1rem;
+  margin-bottom: 7rem;
+  letter-spacing: 0.1rem;
+}
+section.planos div.container-planos div.plano-item a:hover {
+  background: #5a8b02;
+}
+
+/* ---MENUS DE ACESSO RÁPIDO */
+section.acesso-rapido {
+  max-width: 90%;
+  width: 108rem;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.acesso-rapido a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background: #5a8b02;
+  color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 4rem;
+  font-weight: bold;
+  margin: 3rem;
+  text-align: center;
+}
+
+/* --- FOOTER ---- */
+footer.footer-bg {
+  background: url(../img/footer/footer-bg.svg) no-repeat center;
+  background-size: cover;
+}
+
+section.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  max-height: 1280px;
+  margin: auto;
+}
+/* ------SESSÃO CONTATO---- */
+section.container-footer div.contato {
+  flex: 1 1 40rem;
+
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  margin-top: 20rem;
+}
+
+section.container-footer div.contato div.conta-me h1 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+section.container-footer div.contato div.conta-me p {
+  font-size: 2.4rem;
+  color: white;
+  text-transform: lowercase;
+}
+
+section.container-footer div.contato div.conta-me a {
+  font-size: 2.4rem;
+  color: white;
+  text-decoration: none;
+  padding-top: 5rem;
+}
+
+/*----- MEDIAS SOCIAIS -----*/
+section.container-footer div.contato div.social ul {
+  display: flex;
+}
+
+section.container-footer div.contato div.social ul li {
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+
+/* -------- SESSÃO FORMULARIO ----------- */
+
+section.container-footer div.formulario {
+  flex: 2 1 30rem;
+  display: flex;
+  margin-top: 20rem;
+  /* alinha o form no centro ao lado direito */
+  justify-content: center;
+  align-items: center;
+}
+section.container-footer div.formulario form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+section.container-footer div.formulario form .input-nome-email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.container-footer div.formulario form .form-item {
+  position: relative;
+}
+section.container-footer div.formulario form .input-nome {
+  flex: 1 1 10rem;
+  display: flex;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+}
+section.container-footer
+  div.formulario
+  form
+  .input-nome-email
+  input[type="text"] {
+  width: 30rem;
+  height: 4rem;
+}
+section.container-footer div.formulario form .input-email {
+  flex: 2 1 15rem;
+}
+
+section.container-footer div.formulario form .form-item label {
+  position: absolute;
+  left: 0px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* --- ESTILIZAÇÃO INPUT E TEXTAREA --- */
+
+/* --- Estilizando os inputs */
+.form-item input {
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #811a80;
+  transition: all 0.3 ease;
+  color: #ffffff;
+}
+/* ---hover do input */
+.form-item input:hover {
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #981d97;
+  transition: all 0.3 ease;
+}
+
+.form-item input:focus ~ label,
+.form-item input:valid ~ label {
+  transform: translateY(-2.3rem);
+  font-size: 1.4rem;
+}
+/*---------- ESTILO TEXTAREA ------------*/
+.form-item textarea {
+  font-family: "Nunito", sans-serif;
+  background: none;
+  border: none;
+  resize: none;
+  border-bottom: 0.2rem solid #811a80;
+  /* Não exibe a barra de rolagem quando ultrapassa o limite */
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.form-item textarea:hover {
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #981d97;
+}
+
+.form-item textarea:focus ~ label,
+.form-item textarea:valid ~ label {
+  transform: translateY(-2.3rem);
+  font-size: 1.4rem;
+}
+
+/*  ---- ESTILO BOTÃO ---- */
+section.container-footer div.formulario form .btn {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+section.container-footer div.formulario form .btn input[type="submit"] {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: #811a80;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 30rem;
+  letter-spacing: 0.5rem;
+}
+
+section.container-footer div.formulario form .btn input[type="submit"]:hover {
+  background: #981d97;
+}
+
+/* ---  MIDIAS SOCIAIS ---- */
+
+.conecte-se {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conecte-se ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.conecte-se ul li {
+  margin: 5px;
+  padding: 5px;
+}
+
+.conecte-se ul li:hover {
+  opacity: 0.5;
+}
+
+/* ----- ESTILO DIREITOS ------- */
+.voel-direitos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.voel-direitos p.voel {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #5d5d5d;
+}
+div.voel-direitos div.separador {
+  margin: 1rem auto;
+  width: 60%;
+  height: 1px;
+  background: #5d5d5d;
+}
+.voel-direitos p.direitos {
+  color: #5d5d5d;
+  margin: 1rem auto;
+}
+/* ---- botão top */
+div.btnTop {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  cursor: pointer;
+  display: none;
+  transition: 0.2s ease;
+}
+/* menu de acesso rápido */
+section.acesso-rapido {
+  width: 90%;
+  max-width: 108rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 10rem;
+  margin-top: 15rem;
+}

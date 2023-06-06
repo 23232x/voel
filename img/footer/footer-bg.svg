@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #232323;
+      }
+    </style>
+  </defs>
+  <path id="footer-bg-internal-css" class="cls-1" d="M0,0,1400,98.637h0V520H0Z"/>
+</svg>

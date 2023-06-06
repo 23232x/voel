@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="36" viewBox="0 0 35 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #7da438;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_30" data-name="Rectangle 30" class="cls-1" width="35" height="36" transform="translate(398 1844)"/>
+    </clipPath>
+  </defs>
+  <g id="call" class="cls-2" transform="translate(-398 -1844)">
+    <g id="call-24px" transform="translate(398 1844.5)">
+      <path id="Path_36" data-name="Path 36" class="cls-3" d="M0,0H35V35H0Z"/>
+      <path id="Path_37" data-name="Path 37" class="cls-4" d="M29.181,22.429a16.688,16.688,0,0,1-5.148-.817,1.425,1.425,0,0,0-1.473.35l-2.29,2.873a22.142,22.142,0,0,1-10.048-9.96l2.844-2.421a1.488,1.488,0,0,0,.35-1.488A16.264,16.264,0,0,1,12.6,5.819a1.457,1.457,0,0,0-1.444-1.444H6.11c-.787,0-1.735.35-1.735,1.444A25.013,25.013,0,0,0,29.181,30.625,1.53,1.53,0,0,0,30.625,28.9V23.873A1.457,1.457,0,0,0,29.181,22.429Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="122" height="60" viewBox="0 0 122 60">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-weight: 700;
+      }
+
+      .cls-1 {
+        font-size: 30px;
+        font-family: Arial-BoldMT, Arial;
+      }
+
+      .cls-2 {
+        font-size: 20px;
+        font-family: SegoeUI-Bold, Segoe UI;
+      }
+    </style>
+  </defs>
+  <text id="_Voel_" data-name="&lt; Voel /&gt;" class="cls-1" transform="translate(0 27)"><tspan x="0" y="0">&lt; Voel /&gt;</tspan></text>
+  <text id="_interactive" data-name="  interactive" class="cls-2" transform="translate(5 55)"><tspan x="0" y="0" xml:space="preserve">  interactive</tspan></text>
+</svg>

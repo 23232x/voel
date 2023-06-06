@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="36" viewBox="0 0 35 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7da438;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-1" width="35" height="36" transform="translate(203 1845)"/>
+    </clipPath>
+  </defs>
+  <g id="email" class="cls-2" transform="translate(-203 -1845)">
+    <g id="mail_outline-24px" transform="translate(203 1845.5)">
+      <path id="Path_33" data-name="Path 33" class="cls-3" d="M0,0H35V35H0Z"/>
+      <path id="Path_34" data-name="Path 34" class="cls-1" d="M29.167,5.833H5.833a2.913,2.913,0,0,0-2.9,2.917l-.015,17.5a2.925,2.925,0,0,0,2.917,2.917H29.167a2.925,2.925,0,0,0,2.917-2.917V8.75A2.925,2.925,0,0,0,29.167,5.833Zm0,20.417H5.833V11.667L17.5,18.958l11.667-7.292ZM17.5,16.042,5.833,8.75H29.167Z"/>
+    </g>
+  </g>
+</svg>

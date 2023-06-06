@@ -1,0 +1,839 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  color: #ffffff;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+html {
+  /* a cada 1rem será considera 10px */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  /* ---   EFEITO DESLIZANTE SUAVE ENTRE OS LINKS INTERNOS */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  /* background: url(../img/bg/formas-bg.svg) repeat center; */
+}
+/* INICIO ESTILIZAÇÃO CABECALHO*/
+header {
+  display: flex;
+}
+
+header div.header-bg {
+  flex: 1;
+  background: url(../img/header/header.svg) no-repeat center;
+  background-size: cover;
+  /*  height: 15rem; */
+  z-index: 1;
+}
+/* container menu e logo */
+header div.container-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 108rem;
+  margin: 3rem auto;
+}
+header div.container-menu div.logo {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ESTILIZAÇÃO LOGO */
+header div.container-menu div.logo a {
+  font-size: 4rem;
+  text-transform: capitalize;
+  margin-top: 10px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+/* EXIBINDO MENU INLINE*/
+header div.container-menu div.menu-section nav.menu ul {
+  display: flex;
+}
+
+/* estilizando o menu */
+header div.container-menu div.menu-section nav.menu ul li a {
+  font-size: 1.45rem;
+  margin-left: 7.5rem;
+  text-transform: uppercase;
+  /*   font-family: Arial, Helvetica, sans-serif; */
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+header div.container-menu div.menu-section nav.menu ul li a::before {
+  content: "<";
+  display: inline-block;
+  margin-right: 5px;
+  transform: scaley(2);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+header div.container-menu div.menu-section nav.menu ul li a:hover::before {
+  content: "<";
+  display: inline-block;
+  margin-right: 5px;
+  transform: scaley(1);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+header div.container-menu div.menu-section nav.menu ul li a::after {
+  content: "/ >";
+  display: inline-block;
+  margin-right: 5px;
+  transform: scaley(2);
+  opacity: 0;
+  transition: 0.5s;
+  margin-left: 3px;
+}
+
+header div.container-menu div.menu-section nav.menu ul li a:hover::after {
+  content: " / >";
+  display: inline-block;
+  margin-right: 5px;
+  transform: scaley(1);
+  opacity: 1;
+  transition: 0.5s;
+  margin-left: 3px;
+}
+
+/* hero */
+
+section.hero .container {
+  width: 90%;
+  max-width: 108rem;
+  margin: 0 auto;
+  margin-top: 18rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.hero div.container .itens img {
+  width: 35rem;
+}
+section.hero div.itens span {
+  display: inline-block;
+  color: #981d97;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section.hero .itens h2 {
+  color: #4b4b4b;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+section.hero .container .itens h1 {
+  font-size: 3.5rem;
+  color: #4b4b4b;
+  font-weight: bold;
+}
+
+section.hero .container .itens h1 span {
+  background: #981d97;
+  color: #fff;
+  padding: 0 1rem;
+  border-radius: 2px;
+}
+
+/*  -- PARTE 2 */
+
+/* section.site-bg {
+  background: url(../img/bg/formas-bg.svg) repeat center;
+  background-size: cover;
+} */
+
+section.site-bg div.site-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  max-width: 108rem;
+  margin: 20rem auto;
+}
+section.site-bg div.site-container h1 {
+  flex: 3 2 100%;
+  font-size: 3.2rem;
+  color: #811a80;
+  line-height: 4.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+section.site-bg div.site-container h1:after {
+  display: block;
+  content: "";
+  background: #811a80;
+  width: 10rem;
+  height: 0.55rem;
+  border-radius: 4rem;
+  margin-left: 0;
+}
+
+section.site-bg div.site-container div.item-container {
+  flex: 2 1 40rem;
+  margin: 2rem 2rem 2rem 0;
+}
+section.site-bg div.site-container div.item-container p {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #363636;
+}
+section.site-bg div.site-container div.second {
+  flex: 1 1 20rem;
+  margin: 2rem 2rem 2rem 0;
+}
+section.site-bg div.site-container div.second p span {
+  color: #5a8b02;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+section.site-bg div.site-container aside.item-container {
+  flex: 1 1 20rem;
+  margin-top: -10rem;
+  background: #55358f;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 21% 0% 21% 0% / 29% 17% 21% 41%;
+}
+
+section.site-bg div.site-container aside.item-container p {
+  padding: 1rem;
+  font-size: 2rem;
+  line-height: 3.25rem;
+}
+div.site-container aside.item-container p a {
+  display: block;
+  background: #5a8b02;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  text-align: center;
+}
+/* responsivo */
+@media (max-width: 977px) {
+  section.site-bg div.site-container aside.item-container {
+    margin-top: 3rem;
+    border-radius: 4px;
+  }
+  section.site-bg div.site-container aside.item-container p {
+    text-align: center;
+  }
+  section.site-bg div.site-container aside.item-container p a {
+    width: 95%;
+  }
+}
+/* --- FLUXOGRAMA -- */
+
+section.fluxograma {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10rem auto;
+  width: 90%;
+  max-width: 108rem;
+  margin: 10rem auto;
+}
+
+section.fluxograma h2 {
+  flex: 3 2 100%;
+  font-size: 3.2rem;
+  color: #811a80;
+  line-height: 4.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+section.fluxograma h2:after {
+  display: block;
+  content: "";
+  background: #811a80;
+  width: 10rem;
+  height: 0.55rem;
+  border-radius: 4rem;
+  margin: 0 auto;
+}
+
+div.cards {
+  background: #ccd5ba;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+div.cards .card {
+  flex: 1 1 42rem;
+  margin: 10px;
+  background: #d1e8a7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.cards .card .decription {
+  height: 15rem;
+}
+
+div.cards .card div.decription h3 {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  color: #5a8b02;
+  text-transform: unset;
+}
+div.cards .card div.decription h3::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 0.3rem;
+  border-radius: 4rem;
+  background: #5a8b02;
+  margin: 1rem auto;
+}
+div.cards .card div.decription p {
+  padding: 1rem;
+  color: #5a8b02;
+  text-align: center;
+}
+
+div.cards .card div.flaticon img {
+  width: 30rem;
+}
+/*  FAQ */
+
+section.faq {
+  background: #ccd5ba;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.faq div.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 10rem auto;
+  width: 90%;
+  max-width: 108rem;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+}
+
+section.faq h2 {
+  /*   flex: 3 2 100%; */
+  font-size: 3.2rem;
+  color: #811a80;
+  line-height: 4.3rem;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+section.faq h2:after {
+  display: block;
+  content: "";
+  background: #811a80;
+  width: 10rem;
+  height: 0.55rem;
+  border-radius: 4rem;
+  margin: 1rem auto;
+}
+
+section.faq div.wrapper div.lista-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(50, 50, 90, 0.1);
+}
+
+section.faq div.wrapper div.lista-item h3 {
+  font-size: 2rem;
+  color: #707070;
+  line-height: 3.5rem;
+  cursor: pointer;
+}
+
+section.faq div.wrapper div.lista-item #paragraf1 {
+  display: none;
+}
+
+section.faq div.wrapper div.lista-item #paragraf1 p {
+  display: block;
+  color: #707070;
+  line-height: 3.25rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+section.faq div.wrapper div.lista-item #paragraf2 {
+  display: none;
+}
+
+section.faq div.wrapper div.lista-item #paragraf2 p {
+  display: block;
+  color: #707070;
+  line-height: 3.25rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+section.faq div.wrapper div.lista-item #paragraf2 h4 {
+  color: #707070;
+  margin: 2rem 0 2rem 2rem;
+}
+section.faq div.wrapper div.lista-item #paragraf2 ul li {
+  color: #707070;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+section.faq div.wrapper div.lista-item #paragraf2 ul li::before {
+  content: "";
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background-color: #363636;
+  border: 2px solid #55358f;
+  margin-right: 1rem;
+}
+
+section.faq div.wrapper div.lista-item #paragraf3 {
+  display: none;
+}
+
+section.faq div.wrapper div.lista-item #paragraf3 p {
+  display: block;
+  color: #707070;
+  line-height: 3.25rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+section.faq div.wrapper div.lista-item #paragraf4 {
+  display: none;
+}
+
+section.faq div.wrapper div.lista-item #paragraf4 p {
+  display: block;
+  color: #707070;
+  line-height: 3.25rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+section.faq div.wrapper div.lista-item #paragraf5 {
+  display: none;
+}
+
+section.faq div.wrapper div.lista-item #paragraf5 p {
+  display: block;
+  color: #707070;
+  line-height: 3.25rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+section.faq div.wrapper div.lista-item #paragraf6 {
+  display: none;
+}
+
+section.faq div.wrapper div.lista-item #paragraf6 p {
+  display: block;
+  color: #707070;
+  line-height: 3.25rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+section.faq div.wrapper div.lista-item #paragraf7 {
+  display: none;
+}
+
+section.faq div.wrapper div.lista-item #paragraf7 p {
+  display: block;
+  color: #707070;
+  line-height: 3.25rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+section.faq div.wrapper div.lista-item #paragraf8 {
+  display: none;
+}
+
+section.faq div.wrapper div.lista-item #paragraf8 p {
+  display: block;
+  color: #707070;
+  line-height: 3.25rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+.trigger-input {
+  display: none;
+}
+
+.titulo1::before {
+  content: "+";
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 1rem;
+  color: #811a80;
+}
+
+.titulo2::before {
+  content: "+";
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 1rem;
+  color: #811a80;
+}
+.titulo3::before {
+  content: "+";
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 1rem;
+  color: #811a80;
+}
+.titulo4::before {
+  content: "+";
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 1rem;
+  color: #811a80;
+}
+.titulo5::before {
+  content: "+";
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 1rem;
+  color: #811a80;
+}
+.titulo6::before {
+  content: "+";
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 1rem;
+  color: #811a80;
+}
+.titulo7::before {
+  content: "+";
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 1rem;
+  color: #811a80;
+}
+.titulo8::before {
+  content: "+";
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 1rem;
+  color: #811a80;
+}
+
+.trigger-input:checked + label h3::before {
+  transform: rotate(45deg) scale(1.2);
+}
+
+/* ---MENUS DE ACESSO RÁPIDO */
+section.acesso-rapido {
+  max-width: 90%;
+  width: 108rem;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.acesso-rapido a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background: #5a8b02;
+  color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 4rem;
+  font-weight: bold;
+  margin-left: 5rem;
+}
+
+/* FOOOTER */
+
+/* --- FOOTER ---- */
+footer.footer-bg {
+  background: url(../img/footer/footer-bg.svg) no-repeat center;
+  background-size: cover;
+}
+
+section.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  max-height: 1280px;
+  margin: auto;
+}
+/* ------SESSÃO CONTATO---- */
+section.container-footer div.contato {
+  flex: 1 1 40rem;
+
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  margin-top: 20rem;
+}
+
+section.container-footer div.contato div.conta-me h1 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+section.container-footer div.contato div.conta-me p {
+  font-size: 2.4rem;
+  color: white;
+  text-transform: lowercase;
+}
+
+section.container-footer div.contato div.conta-me a {
+  font-size: 2.4rem;
+  color: white;
+  text-decoration: none;
+  padding-top: 5rem;
+}
+
+/*----- MEDIAS SOCIAIS -----*/
+section.container-footer div.contato div.social ul {
+  display: flex;
+}
+
+section.container-footer div.contato div.social ul li {
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+
+/* -------- SESSÃO FORMULARIO ----------- */
+
+section.container-footer div.formulario {
+  flex: 2 1 30rem;
+  display: flex;
+  margin-top: 20rem;
+  /* alinha o form no centro ao lado direito */
+  justify-content: center;
+  align-items: center;
+}
+section.container-footer div.formulario form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+section.container-footer div.formulario form .input-nome-email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.container-footer div.formulario form .form-item {
+  position: relative;
+}
+section.container-footer div.formulario form .input-nome {
+  flex: 1 1 10rem;
+  display: flex;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+}
+section.container-footer
+  div.formulario
+  form
+  .input-nome-email
+  input[type="text"] {
+  width: 30rem;
+  height: 4rem;
+}
+section.container-footer div.formulario form .input-email {
+  flex: 2 1 15rem;
+}
+
+section.container-footer div.formulario form .form-item label {
+  position: absolute;
+  left: 0px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* --- ESTILIZAÇÃO INPUT E TEXTAREA --- */
+
+/* --- Estilizando os inputs */
+.form-item input {
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #811a80;
+  transition: all 0.3 ease;
+  color: #ffffff;
+}
+/* ---hover do input */
+.form-item input:hover {
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #981d97;
+  transition: all 0.3 ease;
+}
+
+.form-item input:focus ~ label,
+.form-item input:valid ~ label {
+  transform: translateY(-2.3rem);
+  font-size: 1.4rem;
+}
+/*---------- ESTILO TEXTAREA ------------*/
+.form-item textarea {
+  font-family: "Nunito", sans-serif;
+  background: none;
+  border: none;
+  resize: none;
+  border-bottom: 0.2rem solid #811a80;
+  /* Não exibe a barra de rolagem quando ultrapassa o limite */
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.form-item textarea:hover {
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #981d97;
+}
+
+.form-item textarea:focus ~ label,
+.form-item textarea:valid ~ label {
+  transform: translateY(-2.3rem);
+  font-size: 1.4rem;
+}
+
+/*  ---- ESTILO BOTÃO ---- */
+section.container-footer div.formulario form .btn {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+section.container-footer div.formulario form .btn input[type="submit"] {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: #811a80;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 30rem;
+  letter-spacing: 0.5rem;
+}
+
+section.container-footer div.formulario form .btn input[type="submit"]:hover {
+  background: #981d97;
+}
+
+/* ---  MIDIAS SOCIAIS ---- */
+
+.conecte-se {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conecte-se ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.conecte-se ul li {
+  margin: 5px;
+  padding: 5px;
+}
+
+.conecte-se ul li:hover {
+  opacity: 0.5;
+}
+
+/* ----- ESTILO DIREITOS ------- */
+.voel-direitos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.voel-direitos p.voel {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #5d5d5d;
+}
+div.voel-direitos div.separador {
+  margin: 1rem auto;
+  width: 60%;
+  height: 1px;
+  background: #5d5d5d;
+}
+.voel-direitos p.direitos {
+  color: #5d5d5d;
+  margin: 1rem auto;
+}
+
+/* btn top */
+div.btnTop {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  cursor: pointer;
+  display: none;
+  transition: 0.2s ease;
+}
